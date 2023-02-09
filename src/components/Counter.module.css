@@ -1,0 +1,18 @@
+.button {
+  background-color: white;
+  box-shadow: 2px 10px 25px -8px rgba(66, 68, 90, 1);
+  margin-right: 10px;
+  border: none;
+  padding: 10px;
+  min-width: 100px;
+  border-radius: 4px;
+}
+
+.button:hover {
+  cursor: pointer;
+}
+
+.statistics {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
