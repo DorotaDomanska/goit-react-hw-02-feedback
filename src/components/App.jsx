@@ -47,10 +47,8 @@ export class App extends Component {
     }));
   };
 
-  handleFeedback = (evt) => {
-    const {options} = evt.target
-    
-    if (options === 'this.state.good') {
+  handleFeedback = name => {
+    if (name === 'this.state.good') {
       this.handleGoodFeedback();
     }
   };
