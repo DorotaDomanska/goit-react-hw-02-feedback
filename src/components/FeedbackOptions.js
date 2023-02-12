@@ -5,16 +5,16 @@ export class FeedbackOptions extends Component {
   handleFeedbackOption = evt => {
     const { onLeaveFeedback } = this.props;
     const { name } = evt.target;
-    
+
     onLeaveFeedback(name);
   };
 
   render() {
     const { options } = this.props;
+    console.log(options[0]);
 
     return (
       <div>
-        <h3>Please leave feedback</h3>
         <button
           className={css.button}
           name={options[0]}

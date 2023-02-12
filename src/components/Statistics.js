@@ -7,7 +7,6 @@ export class Statistics extends Component {
 
     return (
       <div>
-        <h3>Statistics</h3>
         <p className={css.statistics}>Good: {good}</p>
         <p className={css.statistics}>Neutral: {neutral}</p>
         <p className={css.statistics}>Bad: {bad}</p>

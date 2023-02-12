@@ -1,6 +1,5 @@
 import { Component } from 'react';
-import { FeedbackOptions } from './FeedbackOptions';
-import { Statistics } from './Statistics';
+import { Section } from './Section';
 
 export class App extends Component {
   state = {
@@ -65,17 +64,19 @@ export class App extends Component {
           color: '#010101',
         }}
       >
-        <FeedbackOptions
+        <Section
+          title="Please leave feedback"
           options={Object.keys(this.state)}
           onLeaveFeedback={this.handleFeedback}
-        ></FeedbackOptions>
-        <Statistics
+        ></Section>
+        <Section
+          title="Statistics"
           good={good}
           neutral={neutral}
           bad={bad}
           total={total}
           positivePercentage={countPositiveFeedbackPercentage}
-        ></Statistics>
+        ></Section>
       </div>
     );
   }
