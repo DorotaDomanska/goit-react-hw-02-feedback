@@ -13,7 +13,7 @@ export class FeedbackOptions extends Component {
     const { options } = this.props;
 
     return (
-      <div>
+      <div className={css.feedbackOptions}>
         {options.map(option => (
           <button
             key={option}
