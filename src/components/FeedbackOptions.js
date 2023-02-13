@@ -11,34 +11,20 @@ export class FeedbackOptions extends Component {
 
   render() {
     const { options } = this.props;
-    console.log(options[0]);
 
     return (
       <div>
-        <button
-          className={css.button}
-          name={options[0]}
-          type="button"
-          onClick={this.handleFeedbackOption}
-        >
-          Good
-        </button>
-        <button
-          className={css.button}
-          name={options[1]}
-          type="button"
-          onClick={this.handleFeedbackOption}
-        >
-          Neutral
-        </button>
-        <button
-          className={css.button}
-          name={options[2]}
-          type="button"
-          onClick={this.handleFeedbackOption}
-        >
-          Bad
-        </button>
+        {options.map(option => (
+          <button
+            key={option}
+            className={css.button}
+            name={option}
+            type="button"
+            onClick={this.handleFeedbackOption}
+          >
+            {option}
+          </button>
+        ))}
       </div>
     );
   }
